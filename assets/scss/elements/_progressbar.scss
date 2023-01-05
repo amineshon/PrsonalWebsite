@@ -1,0 +1,61 @@
+/*=========================
+    Progress Bar Styles 
+==========================*/
+
+.progress-charts{
+    overflow: hidden;
+    & + .progress-charts{
+        margin-top: 30px;
+    }
+    h6{
+        &.heading{
+            margin-bottom: 15px;
+            color: #c3cedd;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.9;
+            font-weight: 400;
+            span{
+                &.percent-label{
+                    color: #c3cedd;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    opacity: 0.9;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .progress{
+        height: 13px;
+        overflow: visible;
+        font-size: 14px;
+        border-radius: 10px;
+        padding: 3px;
+        background: #212428;
+        box-shadow: inset 8px 8px 16px #00000075, 
+                    inset -8px -8px 16px #383e4575;
+        .progress-bar{
+            overflow: visible;
+            position: relative;
+            border-radius: 14px;
+            background: #f02981;
+            background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+            span{
+                &.percent-label{
+                    position: absolute;
+                    right: -7px;
+                    top: -22px;
+                    font-weight: 400;
+                    color: #c3cedd;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}

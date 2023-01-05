@@ -1,0 +1,97 @@
+/*--------------------------
+    Navigation Styles  
+----------------------------*/
+.mainmenu-nav {
+    .primary-menu {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        margin: -24px;
+        padding: 0;
+
+        @media #{$lg-layout} {
+            display: block;
+            margin-top: 95px;
+            margin-left: 30px;
+        }
+
+        @media #{$md-layout} {
+            display: block;
+            margin-top: 95px;
+            margin-left: 30px;
+        }
+
+        @media #{$sm-layout} {
+            display: block;
+            margin-top: 95px;
+            margin-left: 30px;
+        }
+
+        li {
+            margin: 10px 14px;
+            transition: 0.3s;
+
+            @media #{$laptop-device} {
+                margin: 10px 5px;
+            }
+
+            &:hover {
+                a {
+                    opacity: 1 !important;
+                    color: var(--color-white);
+                }
+            }
+
+            a {
+                color: var(--color-lightn);
+                position: relative;
+                transition: var(--transition);
+                font-size: 13px;
+                font-weight: var(--s-regular);
+                text-transform: uppercase;
+                font-family: var(--font-secondary);
+                
+                &.active {
+                    opacity: 1 !important;
+                    color: var(--color-white);
+                }
+            }
+        }
+        &:hover {
+            li {
+                a {
+                    opacity: 0.5;
+                    &.active { 
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.header--sticky {
+    &.sticky {
+        .mainmenu-nav {
+            .primary-menu {
+                li {
+                    a {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
